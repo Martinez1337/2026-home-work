@@ -94,12 +94,12 @@ public class Martinez1337AuditService implements AuditService {
                 throw e;
             }
         } catch (RuntimeException e) {
-            LOG.warn("Audit consumer stopped unexpectedly", e);
+            LOG.warn("Audit consumer stopped unexpectedly.", e);
         } finally {
             try {
                 currentConsumer.commitSync();
             } catch (RuntimeException e) {
-                LOG.debug("Failed to commit audit offsets while stopping", e);
+                LOG.debug("Failed to commit audit offsets while stopping.", e);
             }
             consumer.set(null);
             worker.set(null);
