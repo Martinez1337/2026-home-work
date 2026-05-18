@@ -14,6 +14,7 @@ import company.vk.edu.distrib.compute.kirillmedvedev23.KirillmedvedevKVServiceFa
 import company.vk.edu.distrib.compute.korjick.CakeKVServiceFactory;
 import company.vk.edu.distrib.compute.luckyslon2003.LuckySlon2003KVServiceFactory;
 import company.vk.edu.distrib.compute.mandesero.KVServiceFactoryImpl;
+import company.vk.edu.distrib.compute.martinez1337.service.Martinez1337KVServiceFactory;
 import company.vk.edu.distrib.compute.nesterukia.file_system.NesterukiaFileSystemKVServiceFactory;
 import company.vk.edu.distrib.compute.nihuaway00.NihuawayKVServiceFactory;
 import company.vk.edu.distrib.compute.shuuuurik.ShuuuurikFileKVServiceFactory;
@@ -46,7 +47,8 @@ public class KVServiceFactoryArgumentsProvider implements ArgumentsProvider {
         KirillmedvedevFileSystemKVServiceFactory.class,
         LuckySlon2003KVServiceFactory.class,
         Wolfram158KVServiceFactoryFileWithCacheImpl.class,
-        CakeKVServiceFactory.class
+        CakeKVServiceFactory.class,
+        Martinez1337KVServiceFactory.class
     );
 
     @Override
